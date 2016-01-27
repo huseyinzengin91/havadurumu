@@ -1,0 +1,15 @@
+<ion-view view-title="Arama">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+            <span class="input-label">Arama yapmak istediğiniz bölgenin ismini yazınız.</span>
+            <input ng-model="weather.cityName" ng-change="search(weather.cityName)" type="text" placeholder="Ara" />
+            </label>
+        </div>
+        
+        <ul class="list">
+            <li class="item">Şehir Adı: {{cityDetail.name}}</li>
+            <li class="item">Hava Durumu: {{cityDetail.weather[0].description}}</li>
+        </ul>
+    </ion-content>
+</ion-view>

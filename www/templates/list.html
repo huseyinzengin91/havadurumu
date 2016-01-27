@@ -1,0 +1,11 @@
+<ion-view view-title="İstanbul İlçeler">
+    <ion-content>
+        <ion-refresher pulling-text="Tazele..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat="item in istanbul" type="item-text-wrap">
+                <h2>{{item.name}}:</h2> {{item.weather[0].description}}
+            </ion-item>    
+        </ion-list>
+    
+    </ion-content>
+</ion-view>
